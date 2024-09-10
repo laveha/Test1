@@ -1,0 +1,6 @@
+D:\Проекты\Paswords\Paswords\bin\Debug\Paswords.dll
+D:\Проекты\Paswords\Paswords\bin\Debug\Paswords.pdb
+D:\Проекты\Paswords\Paswords\obj\Debug\Paswords.csproj.AssemblyReference.cache
+D:\Проекты\Paswords\Paswords\obj\Debug\Paswords.csproj.CoreCompileInputs.cache
+D:\Проекты\Paswords\Paswords\obj\Debug\Paswords.dll
+D:\Проекты\Paswords\Paswords\obj\Debug\Paswords.pdb
