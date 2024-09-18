@@ -8,49 +8,57 @@ namespace Paswords.Tests
         [TestMethod]
         public void Test_Password_Stroch()
         {
-            string password = "abcABC";
-            int expectedScore = 1;
-            Assert.AreEqual(expectedScore, Passw.CheckPasw(password));
+            //arrange
+            string password = "abc";
+            int expected = 1;
+            //assert
+            Assert.AreEqual(expected, Passw.CheckPasw(password));
         }
 
         [TestMethod]
         public void Test_Password_Stroch_Number()
         {
             string password = "abc123";
-            int expectedScore = 2;
-            Assert.AreEqual(expectedScore, Passw.CheckPasw(password));
+            int expected = 2;
+            //assert
+            Assert.AreEqual(expected, Passw.CheckPasw(password));
         }
 
         [TestMethod]
         public void Test_Password_Stroch_Num_Zaglav()
         {
             string password = "abc123ABC";
-            int expectedScore = 3;
-            Assert.AreEqual(expectedScore, Passw.CheckPasw(password));
+            int expected = 3;
+            //assert
+            Assert.AreEqual(expected, Passw.CheckPasw(password));
         }
 
         [TestMethod]
         public void Test_Password_Stroch_Num_Zaglav_Spez()
         {
             string password = "abc123ABC@";
-            int expectedScore = 4;
-            Assert.AreEqual(expectedScore, Passw.CheckPasw(password));
+            int expected = 4;
+            //assert
+            Assert.AreEqual(expected, Passw.CheckPasw(password));
         }
 
         [TestMethod]
         public void Test_Password_Stroch_Num_Zaglav_Spez_Dlin()
         {
             string password = "abc123ABC@123456";
-            int expectedScore = 5;
-            Assert.AreEqual(expectedScore, Passw.CheckPasw(password));
+            int expected = 5;
+            //assert
+            Assert.AreEqual(expected, Passw.CheckPasw(password));
         }
 
         [TestMethod]
         public void Test_Password_Net_Sootvetstvii()
         {
-            string password = "aaa";
-            int expectedScore = 0;
-            Assert.AreEqual(expectedScore, Passw.CheckPasw(password));
+            //arrange
+            string password = "";
+            int expected = 0;
+            //assert
+            Assert.AreEqual(expected, Passw.CheckPasw(password));
         }
     }
 }
